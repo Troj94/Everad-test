@@ -17,6 +17,10 @@
       rel="shortcut icon"
       href="https://cdn-icons.flaticon.com/png/512/1927/premium/1927746.png?token=exp=1638620474~hmac=81dcc9dd64b6fd40bb94ace1e00f0245"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+    />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
@@ -47,59 +51,98 @@
         <div>
           <img src="./img/cats.png" alt="cats" />
         </div>
-        <form>
-          TIME LEFT <br />
-          2:00:00 <br />120uah <br />
-          60uah <br />
-          <input type="text" name="" id="" />
-          <input type="text" name="" id="" />
-          <button>Order</button>
-          <span>Order date: 26.01.2022</span>
+        <form class="form">
+          <div class="form-rectangle">
+            TIME LEFT <br />
+            2:00:00 <br />120uah <br />
+            60uah <br />
+          </div>
+          <svg class="svg">
+            <use href="./img/cat_paw.svg"></use>
+          </svg>
+          <input class="input" type="text" name="" id="" placeholder="Name" />
+          <svg class="svg">
+            <use href="./img/cat_paw.svg"></use>
+          </svg>
+          <input
+            class="input"
+            type="tel"
+            name=""
+            id=""
+            placeholder="+38(0__)___-__-__"
+          />
+
+          <button class="button">Order</button>
+          <p>Order date: 26.01.2022</p>
         </form>
       </div>
     </section>
-    <section>
-      <h2>From the manufacturer</h2>
-      <ul>
-        <li>
+    <section class="second-screen">
+      <h2 class="second-screen__title">From the manufacturer</h2>
+      <ul class="second-screen__list">
+        <li class="second-screen__item">
           <img src="./img/cat_sleeping.png" alt="cat sleeping" />
-          <div>
-            <h3>Keep Calm and Carry On</h3>
+          <div class="second-screen__text-block">
+            <h3 class="second-screen__text-block__title">
+              Keep Calm and Carry On
+            </h3>
+            <p>
+              Are you searching for a better way to ease your pet’s separation
+              anxiety or stress? Calming chews help relieve pet stress without
+              corn, wheat or artificial ingredients.
+            </p>
           </div>
         </li>
-        <li>
+        <li class="second-screen__item">
           <img src="./img/flower.png" alt="flower" />
-          <div>
-            <h3>Peace of Mind</h3>
+          <div class="second-screen__text-block">
+            <h3 class="second-screen__text-block__title">Peace of Mind</h3>
+            <p>
+              Pet Naturals of Vermont’s research-backed formula makes it safe to
+              double or triple the amount in times of added stress.
+            </p>
           </div>
         </li>
-        <li>
+        <li class="second-screen__item">
           <img src="./img/fish.png" alt="fish" />
-          <div>
-            <h3>More than a Tasty Treat</h3>
+          <div class="second-screen__text-block">
+            <h3 class="second-screen__text-block__title">
+              More than a Tasty Treat
+            </h3>
+            <p>
+              Don’t let its satisfying chicken liver flavor fool you.
+              Technically, Calming isn’t a treat but it sure tastes like one.
+              Reward your best buddy with a Calming chew.
+            </p>
           </div>
         </li>
       </ul>
     </section>
-    <section>
-      <h2>Best Uses for Calming Chews</h2>
-      <div>
-        <div>
+    <section class="third-screen">
+      <h2 class="third-screen__title">Best Uses for Calming Chews</h2>
+      <div class="third-screen__info-block">
+        <p class="third-screen__text">
           Car rides. Vet visits. Thunderstorms. Boarding. Parties. These are
           just a handful of times when Calming chews may come in handy. Does
           your dog hate to be left home alone? Does your cat love hiding under
           the bed? Serve up a Calming chew to help soothe your furry pal’s
           anxiety and make your life easier, too! <br />
+          <br />
           For Best Results: <br />
+          <br />
           We recommend administering Calming chews 30 minutes prior to a
           stressful event. The 30-minute activation period gives you a chance to
           increase dosage if you’re not seeing expected results. Calming is safe
           for unique stress inducing events and for long-term use to help manage
           everyday stress.
-        </div>
-        <img src="./img/cat_on_table.png" alt="cat on table" />
-        <img src="./img/grass.png" alt="" />
+        </p>
+        <img
+          class="third-screen__image"
+          src="./img/cat_on_table.png"
+          alt="cat on table"
+        />
       </div>
+      <img class="caca" src="./img/grass.png" alt="" />
     </section>
   </body>
 </html>
