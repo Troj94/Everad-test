@@ -13,10 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="shortcut icon"
-      href="https://cdn-icons.flaticon.com/png/512/1927/premium/1927746.png?token=exp=1638620474~hmac=81dcc9dd64b6fd40bb94ace1e00f0245"
-    />
+    <link rel="shortcut icon" href="./img/cat_paw.svg" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
@@ -45,25 +42,33 @@
           <ul class="articles-block__list">
             <li>Features a patented calming blend</li>
             <li>Doesn’t contain herbal ingredients</li>
-            <li>Helps manage everyday stress</li>
+            <li>
+              Helps manage <br />
+              everyday stress
+            </li>
           </ul>
         </div>
-        <div>
-          <img src="./img/cats.png" alt="cats" />
+        <div class="cats-div">
+          <img class="cats-img" src="./img/cats.png" alt="cats" />
         </div>
         <form class="form">
           <div class="form-rectangle">
-            TIME LEFT <br />
-            2:00:00 <br />120uah <br />
-            60uah <br />
+            <span class="form-title">TIME LEFT</span>
+            <p class="form-timer">
+              <span class="form-timer__hour">2</span>:<span
+                class="form-timer__minutes"
+                >00</span
+              >:<span class="form-timer__seconds">00</span>
+            </p>
+            <span class="old-price">120uah</span>
+            <span class="new-price">60uah</span>
           </div>
-          <svg class="form__icon">
-            <use href="./img/cat_paw.svg"></use>
-          </svg>
+
           <input class="input" type="text" name="" id="" placeholder="Name" />
           <svg class="form__icon">
-            <use href="./img/cat_paw.svg"></use>
+            <use href="./img/symbol-defs.svg#paw"></use>
           </svg>
+
           <input
             class="input"
             type="tel"
@@ -71,9 +76,12 @@
             id=""
             placeholder="+38(0__)___-__-__"
           />
+          <svg class="form__icon">
+            <use href="./img/symbol-defs.svg#paw"></use>
+          </svg>
 
           <button class="button">Order</button>
-          <p>Order date: 26.01.2022</p>
+          <p class="date">Order date: 26.01.2022</p>
         </form>
       </div>
     </section>
@@ -94,7 +102,9 @@
           </div>
         </li>
         <li class="second-screen__item">
-          <img src="./img/flower.png" alt="flower" />
+          <div class="img-thumb">
+            <img src="./img/flower.png" alt="flower" />
+          </div>
           <div class="second-screen__text-block">
             <h3 class="second-screen__text-block__title">Peace of Mind</h3>
             <p>
@@ -104,7 +114,9 @@
           </div>
         </li>
         <li class="second-screen__item">
-          <img src="./img/fish.png" alt="fish" />
+          <div class="img-thumb">
+            <img src="./img/fish.png" alt="fish" />
+          </div>
           <div class="second-screen__text-block">
             <h3 class="second-screen__text-block__title">
               More than a Tasty Treat
@@ -144,5 +156,6 @@
       </div>
       <img class="grass" src="./img/grass.png" alt="" />
     </section>
+    <script src="./js/main.js"></script>
   </body>
 </html>
